@@ -1,0 +1,37 @@
+voting application
+WHAt???
+a functionality where user con give vote to the given set of candidates.
+
+models?
+routes?
+voting app functionality
+1.user sign in/signup
+2.see the list of candidates.
+3.voting one of the candidate,after voting,user con't vote again.
+4.there is a route which shows the list of candidates and their live vpte counts sorted by their vote count.
+5.user data must contain their one unique government id proof named:Aadhar card number
+6.there should be a one admin who can only maintain the table of candidates and he can,t able to vote at all.
+7.user can change their password.
+8.admin cannot vote.
+...........................................................
+
+ROUTES-
+User Authentication:
+ /signup:POST-create a new account.
+ /login:POST-log in to the created account.
+
+ Voting-
+ /candiates:GET-Get the list of candidates.
+ /vote/:candidateId:POST-Vote for a specific candidate.
+
+ Vote Counts-
+ /vote/counts:GET- Get the List of candidates sorted by their vote counts.
+
+ User Profile:
+ /profile:Get-Get the user's profile.
+ /profile/password:PUT-Change the user's password.
+
+ Admin Candidate Management-
+ /candidate:POST-create a new candidate.
+ /candidate/:candidateId:PUT-Update an exixsting candidate.
+ /candidate/:candidateId:DELETE-Delete a condidate from the list
